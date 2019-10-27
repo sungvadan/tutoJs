@@ -14,14 +14,18 @@
 
 <div id="container">
     <ul id="list">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-        <li><a href="#">Item 4</a></li>
-        <li><a href="#">Item 1000</a></li>
+        <li><a href="/demo.php?city=montpellier">Montpellier</a></li>
+        <li><a href="/demo.php?city=perpignan">Perpignan</a></li>
     </ul>
 </div>
 
-<script src="evenement.js"></script>
+<form action="demo.php" action="post" id="contact">
+    <input type="text" name="city" value="">
+    <button>Submit</button>
+</form>
+
+<div id="result"></div>
+
+<script src="ajax.js"></script>
 </body>
 </html>
